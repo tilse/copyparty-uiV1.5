@@ -68,10 +68,10 @@ window.baguetteBox = (function () {
 
     var vtouch = function (e) {
         var v = vid(),
-            bv = v.getBoundingClientRect(),
+            bv = v ? v.getBoundingClientRect() : null,
             tp = e.changedTouches[0];
 
-        if (bv.bottom - tp.clientY < 90)
+        if (bv && bv.bottom - tp.clientY < 90)
             touchFlag = true;
     };
 

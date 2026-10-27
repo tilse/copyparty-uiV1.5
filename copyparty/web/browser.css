@@ -3382,6 +3382,10 @@ html.y #bbox-overlay figcaption a {
 .no-transition {
 	transition: none !important;
 }
+.dl-arr{
+	margin-left: .4em;
+	text-decoration: underline;
+}
 
 
 

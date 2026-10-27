@@ -10282,7 +10282,7 @@ var msel = (function () {
 
 				return '<a download href="' + h +
 					'">' + (idx + 1) + ' / ' + this.length + ' -- ' +
-					esc(uricom_dec(h.split('/').pop())) + '</a>';
+					esc(uricom_dec(h.split('/').pop())) + '<span class="dl-arr">↓</span></a>';
 			},
 			onChange: function (i, maxIdx) {
 				if (this[i].imageElement) {

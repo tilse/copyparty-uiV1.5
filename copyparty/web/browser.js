@@ -1448,7 +1448,7 @@ ebi('op_cfg').innerHTML = (
 		for(var i = 0; i < sections.length; i++){
 			var on = first && (!sections[i + 1] || sections[i + 1].offsetTop > pos);
 			first &= !on;
-			if(on && window.location != sections[i].id)
+			if(on && window.location && window.location.hash != '#' + sections[i].id)
 				hist_replace(get_evpath() + '#' + sections[i].id);
 			clmod(QS('#s_nav .btn[href="#' + sections[i].id + '"]'), 'on', on);
 		}   

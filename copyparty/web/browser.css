@@ -3383,8 +3383,11 @@ html.y #bbox-overlay figcaption a {
 	transition: none !important;
 }
 .dl-arr{
-	margin-left: .4em;
-	text-decoration: underline;
+	margin-left: .2em;
+	height: 1.2em;
+	display: inline-block;
+	width: 1.2em;
+	vertical-align: bottom;
 }
 
 
